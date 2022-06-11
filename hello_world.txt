@@ -1,1 +1,3 @@
 I'm still following the Odin Project's learn to git tutorial.
+
+Testing code as the default editor for git commit.
