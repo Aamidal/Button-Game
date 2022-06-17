@@ -7,22 +7,25 @@
     <title>Javascript test!</title>
 </head>
 <body>
+    <p>
+        You are Tavalas, an renowned physician and natural philosopher. You are aboard the horrible old Tranquil Cloud. An accursed rattling is distracting you from your studies. You believe it is coming from a useless machine, and that the button in front of you will stop it.
+    </p>
+    <button>Stop machine</button>
+    <p></p>
     <script>
-        console.log(23 + 97);
-        console.log(1 + 2 + 3 + 4 + 5 + 6);
-        console.log((4 + 6 + 9) / 77);
-
-        let a = 10;
-        console.log(a);
-        console.log(9 * a);
-        let b = 7 * a;
-        console.log(b)
-
-        let max = 57;
-        let actual = max - 13;
-        let percentage = actual / max;
-        console.log(percentage);
-
+        const btn = document.querySelector('button');
+        const txt = document.querySelector('p');
+        btn.addEventListener('click', updateBtn);
+        function updateBtn() {
+            if (btn.textContent === 'Restart the life support!') {
+                btn.textContent = 'Stop machine';
+                txt.textContent = 'The shrieking is replaced by sighs of relief and the alarms are replaced by accursed rattling!';
+                } 
+            else {
+                btn.textContent = 'Restart the life support!';
+                txt.textContent = 'The machine is stopped. The accursed rattling has been replaced with blessed silence. Until the alarms start, and the Commander starts shrieking over the intercom to Mojgan that life-support is down!';
+            }
+        }
     </script>
 </body>
 </html>
