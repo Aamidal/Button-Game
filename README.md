@@ -1,3 +1,3 @@
-# git-test
-Odin Project test repo
-Hello Odin!
+# The Button Game
+
+A short piece of interactive, existential philsophy.
